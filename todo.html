@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style scoped>
+.red {color:red;}
+</style>
+<body>
+	<div id="hello">
+	  <h1 v-text='msg'></h1>
+	  <ul>
+	    <input type="text" name="" v-model='newDo' v-on:keyup.enter='addDo'>
+	    <li v-for='item in items' v-bind:class="{red:item.isFin}" v-on:click='toggle(item)'>{{item.label}}</li>
+	  </ul>
+	</div>
+	<script type="text/javascript" src='./vue.js'></script>
+	<script type="text/javascript" src='./todo.js'></script>
+</body>
+</html>
